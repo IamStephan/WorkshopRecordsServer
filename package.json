@@ -1,0 +1,19 @@
+{
+  "name": "workshoprecordsserver",
+  "version": "1.0.0",
+  "description": "Workshop records server app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IamStephan/WorkshopRecordsServer.git"
+  },
+  "author": "Stephan Burger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IamStephan/WorkshopRecordsServer/issues"
+  },
+  "homepage": "https://github.com/IamStephan/WorkshopRecordsServer#readme"
+}

@@ -1,12 +1,11 @@
-const http = require('http');
-const port=process.env.PORT || 3000
+const port = process.env.PORT || 3000
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/html');
-  res.end('<h1>Hello World</h1>');
-});
+var io = require('socket.io')(port);
 
-server.listen(port,() => {
-  console.log(`Server running at port `+port);
+io.on('connection', function (socket) {
+  console.log('user connected')
+
+  socket.on('disconnect', function () {
+    console.log('user disconnected')
+  });
 });

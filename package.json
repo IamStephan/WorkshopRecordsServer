@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/IamStephan/WorkshopRecordsServer/issues"
   },
-  "homepage": "https://github.com/IamStephan/WorkshopRecordsServer#readme"
+  "homepage": "https://github.com/IamStephan/WorkshopRecordsServer#readme",
+  "dependencies": {
+    "socket.io": "^2.1.1"
+  }
 }

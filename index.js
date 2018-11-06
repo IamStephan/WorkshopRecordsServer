@@ -14,6 +14,8 @@ function handler (req, res) {
 io.on('connection', function (socket) {
   console.log('user connected')
 
+  socket.emit('hi', {data: 'poop'})
+
   socket.on('disconnect', function () {
     console.log('user disconnected')
   });
